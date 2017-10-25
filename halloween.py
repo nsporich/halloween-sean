@@ -17,11 +17,14 @@ while True:
 
     if (GPIO.input(23) == False):
         os.system('mpg123 -q file1.mp3 &')
+        #os.system("mplayer -ao alsa:device=bluetooth /nums/file1.wav")
 
     if (GPIO.input(24) == False):
         os.system('mpg123 -q file2.mp3 &')
+        #os.system("mplayer -ao alsa:device=bluetooth /nums/file2.wav")
 
     if (GPIO.input(25)== False):
         os.system('mpg123 -q file3.mp3 &')
+        #os.system("mplayer -ao alsa:device=bluetooth /nums/file3.wav")
 
     sleep(0.1);
